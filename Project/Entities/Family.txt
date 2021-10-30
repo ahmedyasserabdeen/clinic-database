@@ -1,0 +1,32 @@
+create table Family(
+F-ID int(10),
+S-ID int references staff (S-ID),
+D-ID int references Doctors (D-ID),
+(F-ID,S-ID,D,TD) primary key,
+F-Patner varchar2(12),
+)
+create table family_Children(
+F-ID int references Family(F-ID),
+F-Childern varchar2(12),
+S-ID int references Family (S-ID),
+D-ID int references Family (D-ID),
+)
+
+---------------------------------------------------------------------------------
+CORRECT CODE:
+
+create table Family(
+F_ID int,
+F_Partner varchar2(100),
+D_ID int references Doctors(D_ID),
+S_ID int references Staff(S_ID),
+primary key(F_ID, D_ID, S_ID)
+)
+
+create table FamilyFChildren(
+Fa_Children varchar2(100) primary key,
+D_ID int,
+F_ID int,
+S_ID int,
+foreign key(D_ID, F_ID, S_ID) references Family
+)

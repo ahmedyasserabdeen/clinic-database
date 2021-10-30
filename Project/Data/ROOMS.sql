@@ -1,0 +1,11 @@
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('8', 'Doctor office 2');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('9', 'Doctor office 3');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('10', 'Doctor office 4');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('11', 'Doctor office 5');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('1', 'Waiting Room');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('3', 'Rest Room');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('7', 'Cleaners'' room');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('6', 'Nurses'' Room');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('2', 'Doctor office 1');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('5', 'Medical Analysis Room');
+INSERT INTO "ROOMS" ("R_ID", "R_TYPE") VALUES ('4', 'Reception Room');

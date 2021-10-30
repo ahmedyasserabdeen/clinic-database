@@ -1,0 +1,61 @@
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, payDate, B_BranchNum) values(1, 2300.00, 1, 'Electricity', 'Electricity bill', '15-mar-2021', '15-mar-2021', ?);
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, payDate, B_BranchNum) values(2, 600.00, 1, 'Water', 'Water bill', '27-mar-2021', '27-mar-2021', ?);
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, P_ID) values(3, 250.00, 1, 'Check', 'Dental check bill', '27-mar-2021');
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, P_ID) values(4, 310.00, 1, 'Check', 'Pulmonary check bill', '2-apr-2021');
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, P_ID) values(5, 790.00, 1, 'Surgery', 'Dental surgery bill', '6-apr-2021');
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, payDate, B_BranchNum) values(6, 3100.00, 1, 'Electricity', 'Electricity bill', '15-apr-2021', '15-apr-2021', ?);
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, payDate, B_BranchNum) values(7, 590.00, 1, 'Water', 'Water bill', '27-apr-2021', '27-apr-2021', ?);
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, P_ID) values(8, 250.00, 1, 'Surgery', 'Dental surgery bill', '2-may-2021');
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, payDate, B_BranchNum) values(9, 2850.00, 1, 'Electricity', 'Electricity bill', '15-may-2021', '15-may-2021', ?);
+
+
+insert into Bills(Bi_ID, Bi_Price, Bi_Status, Bi_Type, Bi_Description, Bi_Date, payDate, B_BranchNum) values(10, 575.00, 0, 'Water', 'Water bill', '27-may-2021', '27-may-2021', ?);
+
+
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(1, 'Diabetes', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(2, 'ADHD', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(3, 'Alzheimer's', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(4, 'Flu', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(5, 'Diabetes', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(6, 'Influenza', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(7, 'Diabetes', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(8, 'Flu', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(9, 'Influenza', ?);
+
+
+insert into MedicalRecords(M_ID, M_MedicalProblem, P_ID) values(10, 'Influenza', ?);
+

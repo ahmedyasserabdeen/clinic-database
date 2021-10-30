@@ -1,0 +1,4 @@
+"ID","TYPE","DESCRIPTION","PRICE","PAY_DATE","IS_PAID","BRANCH"
+"1","Check","Diabetes check bill","250","14-JUN-21","0","8"
+"3","Check","Psychological check bill","290","06-JUN-21","0","5"
+"7","Check","Tumor check bill","195","03-JUL-21","0","3"

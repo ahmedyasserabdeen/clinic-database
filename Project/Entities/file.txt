@@ -1,0 +1,35 @@
+create table Patients (
+PID int primary key,
+first varchar2(12) not null,
+middle varchar2(12) not null,
+last varchar2(12) not null,
+city varchar2(20) not null,
+street varchar2(64) not null,
+pPhoneNum varchar2(11) not null,
+pDiagnosis varchar2(20),
+pAppointment date,
+pRegisteration varchar2(20),
+pPayment varchar2(12),
+pEmail varchar2(32),
+pBirthdate date not null,
+RID int references Rooms (RID),
+recursivePID int references Patients (PID)
+)
+
+create table Doctors (
+DID int primary key,
+first varchar2(12) not null,
+middle varchar2(12) not null,
+last varchar2(12) not null,
+dSalary float not null,
+dSchedule date,
+dSpeciality varchar2(20) not null,
+dPhoneNum varchar2(11) not null,
+dEmail varchar2(32),
+RID int references Rooms (RID)
+)
+
+create table Doctor_DQualification(
+dQualification varchar2(20) primary key,
+DID int references Doctors (DID) not null
+)

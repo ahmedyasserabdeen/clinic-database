@@ -1,0 +1,121 @@
+create table Branches(
+B_BranchNum int primary key,
+B_PhoneNum varchar2(11) not null,
+B_Specifications varchar2(50) not null,
+city varchar2(10) not null,
+street varchar2(10) not null,
+B_Expenses float not null,
+B_Income float not null
+)
+
+
+create table Rooms(
+R_ID int primary key,
+R_Type varchar2(10) not null
+)
+
+
+create table Staff(
+S_ID int primary key,
+first varchar2(10) not null,
+middle varchar2(10) not null,
+last varchar2(10) not null,
+S_Type varchar2(10) not null,
+S_Email varchar2(20),
+S_PhoneNum varchar2(11) not null,
+R_ID int references Rooms (R_ID),
+haveWorkInR_ID int references Rooms (R_ID),
+B_BranchNum int references Branches (B_BranchNum)
+)
+
+create table Patients (
+P_ID int primary key,
+first varchar2(12) not null,
+middle varchar2(12) not null,
+last varchar2(12) not null,
+city varchar2(20) not null,
+street varchar2(64) not null,
+P_PhoneNum varchar2(11) not null,
+P_Diagnosis varchar2(20),
+P_Appointment date,
+P_Registeration varchar2(20),
+P_Payment varchar2(12),
+P_Email varchar2(32),
+P_Birthdate date not null,
+R_ID int references Rooms (R_ID),
+recursiveP_ID int references Patients (P_ID)
+)
+
+create table Doctors (
+D_ID int primary key,
+first varchar2(12) not null,
+middle varchar2(12) not null,
+last varchar2(12) not null,
+D_Salary float not null,
+D_Schedule date,
+D_Speciality varchar2(20) not null,
+D_PhoneNum varchar2(11) not null,
+D_Email varchar2(32),
+R_ID int references Rooms (R_ID)
+)
+
+create table Doctor_DQualification(
+D_Qualification varchar2(20) primary key,
+D_ID int references Doctors (D_ID) not null
+)
+
+
+create table WorkAt(
+D_ID int references Doctors (D_ID),
+B_BranchNum int references Branches (B_BranchNum)
+)
+
+
+create table AreTreatedAt(
+P_ID int references Patients (P_ID),
+B_BranchNum int references Branches (B_BranchNum)
+)
+
+
+create table Bills(
+Bi_ID int primary key,
+Bi_Price float not null,
+Bi_Status int not null,
+Bi_Type varchar2(25) not null,
+Bi_Description varchar2(200) not null,
+Bi_Date date not null,
+payDate date not null,
+B_BranchNum int references Branches (B_BranchNum),
+P_ID int references Patients (P_ID)
+)
+
+create table MedicalRecords(
+M_ID int primary key,
+M_MedicalProblem varchar2(50) not null,
+P_ID int references Patients (P_ID)
+)
+
+create table MedicalRecordsMedicineRequired(
+M_MedicineRequired varchar2(100),
+M_ID int references MedicalRecords(M_ID),
+primary key(M_MedicineRequired, M_ID)
+)
+
+create table Treat(
+P_ID int references Patients(P_ID),
+D_ID int references Doctors(D_ID),
+primary key(P_ID, D_ID)
+)
+
+create table Assist(
+S_ID references Staff(S_ID),
+D_ID references Doctors(D_ID),
+primary key(S_ID, D_ID)
+)
+
+create table Record(
+M_ID references MedicalRecords(M_ID),
+D_ID references Doctors(D_ID),
+primary key(M_ID, D_ID),
+recordDate date not null
+)

@@ -1,0 +1,10 @@
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('BSc. of Ophthalmology Ain Shams University', '4');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('BSc. of Surgery Suez Canal University', '1');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('BSc. of bsc Dermatology Cairo University', '8');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('Bsc. of Surgery 6 October University', '7');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('MSc. of Cardiology Helwan University', '5');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('MSc. of Internal Medicine Alexanderia University', '6');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('MSc. of Neurology Assuit University', '2');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('MSc. of Psychology Ain Shams University', '10');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('MSc. of Radiology Ain Shams University', '3');
+INSERT INTO "DOCTOR_DQUALIFICATION" ("D_QUALIFICATION", "D_ID") VALUES ('MSc. of Surgery Mansoura University', '9');

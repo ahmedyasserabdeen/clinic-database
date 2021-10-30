@@ -1,0 +1,5 @@
+create table MedicalRecords(
+M-ID int primary key,
+M-MedicalProblem varchar2(50) not null,
+P-ID int references Patient (P-ID)
+)

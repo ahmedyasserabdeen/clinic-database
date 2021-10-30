@@ -1,0 +1,10 @@
+create table Family(
+S-ID int references staff (S-ID),
+D-ID int references Doctors (D-ID),
+F-Patner varchar2(12),
+)
+create table family_Children(
+F-Childern varchar2(12),
+S-ID int references Family (S-ID),
+D-ID int references Family (D-ID),
+)

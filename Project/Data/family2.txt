@@ -1,0 +1,21 @@
+INSERT INTO Family VALUES (F_ID,S-ID,D-ID,F-Partner)(1,4,1,'mohamed');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(2,1,2,'ahmed');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(3,3,3,'ali');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(4,6,4,'aya');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(5,2,5,'mostafa');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(6,7,6,'tamer');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(7,5,7,'omer');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(8,9,8,'nada');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(9,10,9,'amer');
+INSERT INTO Family VALUES (F-ID,S-ID,D-ID,F-Partner)(10,8,10,'alaa');
+
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(1,'mohamed'4,1);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(2,'noha'1,2);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(3,'nada'3,3);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(4,'ezz',6,4);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(5,'yara',2,5);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(6,'osama',7,6);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(7,'yasser',5,7);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(8,'karim',9,8);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(9,mohand,10,9);
+INSERT INTO Family_Children VALUES (F-ID,F-Childern,S-ID,D-ID)(10,'mahmoud',8,10);

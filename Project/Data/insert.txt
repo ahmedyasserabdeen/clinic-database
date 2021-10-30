@@ -1,0 +1,54 @@
+create table WorkAt(
+primary key(D_ID,B_BranchNum),
+D_ID int references Doctors (D_ID),
+B_BranchNum int references Branches (B_BranchNum)
+)
+
+insert into WorkAt (D_ID,B_BranchNum)
+values(1,1);
+insert into WorkAt (D_ID,B_BranchNum)
+values(2,2);
+insert into WorkAt (D_ID,B_BranchNum)
+values(3,3);
+insert into WorkAt (D_ID,B_BranchNum)
+values(4,4);
+insert into WorkAt (D_ID,B_BranchNum)
+values(5,5);
+insert into WorkAt (D_ID,B_BranchNum)
+values(6,6);
+insert into WorkAt (D_ID,B_BranchNum)
+values(7,7);
+insert into WorkAt (D_ID,B_BranchNum)
+values(8,8);
+insert into WorkAt (D_ID,B_BranchNum)
+values(9,9);
+insert into WorkAt (D_ID,B_BranchNum)
+values(10,10);
+
+
+
+create table AreTreatedAt(
+primary key(P_ID,B_BranchNum),
+P_ID int references Patients (P_ID),
+B_BranchNum int references Branches (B_BranchNum)
+)
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(1,1);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(2,2);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(3,3);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(4,4);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(5,5);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(6,6);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(7,7);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(8,8);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(9,9);
+insert into AreTreatedAt(P_ID,B_BranchNum)
+values(10,10);

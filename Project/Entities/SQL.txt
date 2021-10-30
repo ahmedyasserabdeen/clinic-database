@@ -1,0 +1,15 @@
+create table workAt(
+D-ID int references Doctors (D-ID),
+B-BranchNum int references Branches (B-BranchNum ),
+
+
+)
+describe departments
+
+create table areTreatedAt(
+P-ID int references Patients (P-ID),
+B-BranchNum int references Branches (B-BranchNum ),
+
+)
+describe departments
+

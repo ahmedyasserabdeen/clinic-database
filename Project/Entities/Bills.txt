@@ -1,0 +1,11 @@
+create table Bills(
+Bi-ID int primary key,
+Bi-Price float not null,
+Bi-Status bool not null,
+Bi-Type varchar2(25) not null,
+Bi-Description varchar2(200) not null,
+Bi-Date date not null,
+payDate date not null,
+B-BranchNum varchar2(25) references Branch (B-BranchNum),
+P-ID int references Patient (P-ID)
+)
